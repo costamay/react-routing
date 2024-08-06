@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 
 function UserDetails() {
-    const [user, setUser] =useState({})
+    const [user, setUser] = useState({})
 
     const { id } = useParams()
     
@@ -15,6 +15,10 @@ function UserDetails() {
     },[id])
 
     // console.log(user)
+
+    if(!user.name){
+        return <div>Loading......</div>
+    }
 
   return (
     <div>

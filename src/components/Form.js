@@ -1,6 +1,9 @@
 import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 
 function Form({users, setUsers}) {
+
+    const navigate = useNavigate()
 
     const [formData, setFormData] = useState({
         name : "",
@@ -36,10 +39,13 @@ const handleSubmit =(e)=> {
         name : "",
         username : ""
     })
+
+    navigate("/")
 }
 
   return (
-    <div className='form-wrapper'>
+    <div className='form-submit'>
+        <div className='form-wrapper'>
         <div>
             <h1>Post User</h1>
         </div>
@@ -55,6 +61,7 @@ const handleSubmit =(e)=> {
             </div>
 
         </form>
+    </div>
     </div>
   )
 }

@@ -53,9 +53,31 @@
 
 .form-wrapper{
   border: 2px solid black;
+  border-radius: 5px;
   width: 200px;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.form-submit{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+input{
+  width: 100%;
+  /* padding: 12px 20px; */
+  margin: 8px 0;
+  box-sizing: border-box;
 }
