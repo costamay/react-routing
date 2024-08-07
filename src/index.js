@@ -4,7 +4,12 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, createBrowserRouter } from 'react-router-dom';
+import About from './components/About';
+import UserDetails from './components/UserDetails';
+import Form from './components/Form';
+
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

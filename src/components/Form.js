@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import Swal from 'sweetalert2'
 
 function Form({users, setUsers}) {
 
@@ -39,6 +40,12 @@ const handleSubmit =(e)=> {
         name : "",
         username : ""
     })
+
+    Swal.fire({
+        title: "Success!",
+        text: "User posted successfully",
+        icon: "success"
+      });
 
     navigate("/")
 }
